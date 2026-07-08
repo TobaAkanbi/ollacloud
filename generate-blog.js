@@ -50,7 +50,7 @@ async function fetchPosts() {
     method : 'POST',
     headers: { 'Content-Type': 'application/json' },
     body   : JSON.stringify({ query: `{
-      posts(orderBy: postDate_DESC, stage: PUBLISHED) {
+      posts(orderBy: postDate_DESC) {
         title slug excerpt tag readTime postDate
         metaDescription metaKeywords
         content { html }

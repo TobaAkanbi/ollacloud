@@ -1,2 +1,8 @@
 .env
 k8s/secret.yaml
+qa
+serve.py
+.claude
+claude
+secret.yaml
+k8s/secret.yaml

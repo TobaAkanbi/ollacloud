@@ -1,0 +1,9 @@
+qa
+serve.py
+.claude
+claude
+k8s
+manifests.yaml
+secret.yaml
+docker-compose.yml
+k8s/secret.yaml

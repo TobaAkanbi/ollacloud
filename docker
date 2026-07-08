@@ -1,0 +1,28 @@
+# Olla Cloud — static marketing site
+# Single-stage: nothing to compile, just serve the files with nginx.
+FROM nginx:1.27-alpine
+
+# Replace the stock server config with ours
+RUN rm /etc/nginx/conf.d/default.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
+
+# Copy the site into nginx's web root.
+# --chmod guarantees the files are world-readable, so nginx's unprivileged
+# worker user can serve them regardless of the host file permissions.
+COPY --chmod=644 \
+     index.html product.html pricing.html resources.html partners.html company.html \
+     styles.css main.js \
+     /usr/share/nginx/html/
+
+# Belt-and-braces: normalize ownership + perms (works even if BuildKit is off).
+RUN chown -R root:root /usr/share/nginx/html \
+ && find /usr/share/nginx/html -type d -exec chmod 755 {} + \
+ && find /usr/share/nginx/html -type f -exec chmod 644 {} +
+
+EXPOSE 80
+
+# Container-level health check hitting the /healthz endpoint
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+    CMD wget -qO- http://127.0.0.1/healthz || exit 1
+
+# nginx:alpine already runs: nginx -g 'daemon off;'

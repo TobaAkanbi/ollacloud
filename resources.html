@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OllaCloud Resources — Docs, Guides, System Status & FAQs</title>
+<meta name="description" content="Documentation, quickstarts, migration guides, live system status and FAQs for OllaCloud the resources your team needs to build on Nigeria's sovereign cloud.">
+<meta name="keywords" content="cloud documentation Nigeria, cloud migration guide, cloud status">
+<meta name="geo.region" content="NG-LA"><meta name="geo.placename" content="Lagos">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand" aria-label="OllaCloud home">
+      <!-- ============================================================ -->
+      <!-- LOGO (header) · drop your file into the images/ folder.       -->
+      <!-- Keep the name images/olla-logo.png or update the src below.   -->
+      <!-- Resize it via .logo-img in styles.css.                        -->
+      <!-- If your logo already includes the "OllaCloud" wordmark,      -->
+      <!-- delete the <span class="brand-text"> line just below.         -->
+      <!-- ============================================================ -->
+      <img src="images/Logo-main.png" alt="OllaCloud" class="logo-img-hf">
+      <span class="brand-text">OllaCloud<span class="sub">Ollasystems</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <div class="nav-item">
+        <a href="product.html" class="nav-link">Product <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+        <div class="dropdown">
+          <a href="product.html#compute" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></span><span class="dd-col"><span class="dd-t">Compute</span><span class="dd-d">Elastic virtual machines &amp; bare metal</span></span></a>
+          <a href="product.html#storage" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span><span class="dd-col"><span class="dd-t">Storage</span><span class="dd-d">Object &amp; block storage, S3-compatible</span></span></a>
+          <a href="product.html#networking" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M6.5 6.5l3 3M17.5 6.5l-3 3M6.5 17.5l3-3M17.5 17.5l-3-3"/></svg></span><span class="dd-col"><span class="dd-t">Networking</span><span class="dd-d">VPCs, load balancing, private links</span></span></a>
+          <a href="product.html#kubernetes" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><circle cx="12" cy="11" r="2.5"/><path d="M12 4v4M19 8l-4 2M5 8l4 2"/></svg></span><span class="dd-col"><span class="dd-t">Managed Kubernetes</span><span class="dd-d">Production-ready container clusters</span></span></a>
+        </div>
+      </div>
+            <div class="nav-item">
+        <a href="solutions.html" class="nav-link">Solutions <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+                        <div class="dropdown dd-two-col">
+          <a href="solutions.html#cloud-solutions" class="dd-link"><span class="dd-t">Cloud Solutions</span></a>
+          <a href="solutions.html#service-implementation" class="dd-link"><span class="dd-t">Service Implementation</span></a>
+          <a href="solutions.html#managed-services" class="dd-link"><span class="dd-t">Managed Services</span></a>
+          <a href="solutions.html#it-training" class="dd-link"><span class="dd-t">IT Training</span></a>
+          <a href="solutions.html#security" class="dd-link"><span class="dd-t">Security</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="resources.html" class="nav-link active">Resources <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+                        <div class="dropdown dd-two-col">
+          <a href="resources/private-cloud-nigeria.html" class="dd-link"><span class="dd-col"><span class="dd-t">Private Cloud Nigeria</span><span class="dd-d">OCI-compatible private cloud appliance</span></span></a>
+          <a href="resources/hybrid-cloud-nigeria.html" class="dd-link"><span class="dd-col"><span class="dd-t">Hybrid Cloud Nigeria</span><span class="dd-d">Private cloud + OCI public cloud</span></span></a>
+          <a href="resources/cloud-for-banks-nigeria.html" class="dd-link"><span class="dd-col"><span class="dd-t">Cloud for Banks</span><span class="dd-d">CBN-compliant banking infrastructure</span></span></a>
+          <a href="resources/cloud-for-fintech-nigeria.html" class="dd-link"><span class="dd-col"><span class="dd-t">Cloud for Fintech</span><span class="dd-d">NDPA + PCI DSS compliant fintech infra</span></span></a>
+          <a href="resources/cloud-migration-nigeria.html" class="dd-link"><span class="dd-col"><span class="dd-t">Cloud Migration</span><span class="dd-d">4-stage migration methodology</span></span></a>
+          <a href="resources.html#docs" class="dd-link"><span class="dd-col"><span class="dd-t">Documentation</span><span class="dd-d">Guides &amp; tutorials</span></span></a>
+          <a href="resources.html#faqs" class="dd-link"><span class="dd-col"><span class="dd-t">FAQs</span><span class="dd-d">Answers to common questions</span></span></a>
+        </div>
+      </div>
+      
+      <div class="nav-item"><a href="company.html" class="nav-link">About Us</a></div>
+    </nav>
+    <div class="nav-cta">
+      
+      <a href="booking.html" class="btn btn-teams">
+      <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0"><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM3 10h18M9 10v10M9 4v6" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg>
+      Schedule a meeting</a>
+      <a href="company.html#contact" class="btn btn-dark">Talk to sales</a>
+    </div>
+    <button class="burger" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu">
+  <a href="product.html">Product</a><a href="resources.html">Resources</a><a href="company.html">About Us</a>
+  <div class="m-cta"><a href="company.html#contact" class="btn btn-primary btn-lg">Talk to sales</a></div>
+</div>
+<section class="page-hero">
+  <div class="hero-grid-bg"></div><div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="eyebrow">Resources</span>
+    <h1>Everything you need<br>to go further.</h1>
+    <p>Documentation, guides, and answers. The knowledge layer that helps your team build with confidence on OllaCloud.</p>
+  </div>
+</section>
+
+
+<!-- BLOG -->
+<section class="sec paper" id="blog">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Blog posts &amp; content</span><h2>From our team.</h2></div>
+    <div class="post-grid" id="postGrid"></div>
+  </div>
+</section>
+<script src="posts-data.js"></script>
+<script>
+(function () {
+  var grid = document.getElementById('postGrid');
+  if (!grid || !window.OLLA_POSTS || !OLLA_POSTS.length) return;
+
+  OLLA_POSTS.forEach(function (post, i) {
+    var delay = i === 0 ? '' : i === 1 ? ' d1' : ' d2';
+    var thumb = '';
+
+    if (post.type === 'video') {
+      thumb = '<div class="post-card-thumb-placeholder" data-youtube="' + post.youtubeId + '" style="cursor:pointer">'
+        + '<div class="rgrid"></div>'
+        + '<img src="https://img.youtube.com/vi/' + post.youtubeId + '/maxresdefault.jpg" '
+        + 'onerror="this.style.display=\'none\'" '
+        + 'style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1" alt="">'
+        + '<div class="post-card-play"><span><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></span></div>'
+        + '</div>';
+    } else {
+      thumb = '<div class="post-card-thumb-placeholder">'
+        + '<div class="rgrid"></div>'
+        + '<svg viewBox="0 0 24 24"><path d="M4 4h11l5 5v11H4z"/><path d="M15 4v5h5M8 13h8M8 17h8"/></svg>'
+        + '</div>';
+    }
+
+    var meta = post.type === 'video'
+      ? '<span>Video</span><span>·</span><span>' + post.date + '</span>'
+      : '<span>' + post.date + '</span><span>·</span><span>' + (post.readTime || '') + '</span>';
+
+    var card;
+    if (post.type === 'video') {
+      card = '<div class="post-card reveal' + delay + '">'
+        + thumb
+        + '<div class="post-card-body">'
+        + '<div class="post-card-tag">' + post.tag + '</div>'
+        + '<h3>' + post.title + '</h3>'
+        + '<p>' + post.excerpt + '</p>'
+        + '<div class="post-card-meta">' + meta + '</div>'
+        + '</div></div>';
+    } else {
+      card = '<a href="' + post.url + '" class="post-card reveal' + delay + '">'
+        + thumb
+        + '<div class="post-card-body">'
+        + '<div class="post-card-tag">' + post.tag + '</div>'
+        + '<h3>' + post.title + '</h3>'
+        + '<p>' + post.excerpt + '</p>'
+        + '<div class="post-card-meta">' + meta + '</div>'
+        + '</div></a>';
+    }
+
+    grid.insertAdjacentHTML('beforeend', card);
+  });
+
+  // Inline video play — replace thumbnail with iframe inside the card
+  grid.addEventListener('click', function (e) {
+    var thumb = e.target.closest('[data-youtube]');
+    if (!thumb) return;
+    var id = thumb.getAttribute('data-youtube');
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+    iframe.allow = 'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none';
+    thumb.innerHTML = '';
+    thumb.style.cursor = 'default';
+    thumb.appendChild(iframe);
+  });
+})();
+</script>
+
+<!-- FAQ -->
+<section class="sec" id="faqs">
+  <div class="wrap">
+    <div class="sec-head center reveal"><span class="eyebrow center">FAQs</span><h2>Questions, answered.</h2></div>
+    <div class="faq reveal">
+      <div class="faq-item"><button class="faq-q">Where is my data physically stored?<span class="ic"><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg></span></button><div class="faq-a"><p>Every byte you store on OllaCloud lives on OCI-compatible rack-scale infrastructure located inside Nigeria. Your data does not leave the country unless you explicitly configure it to. This keeps you aligned with the Nigeria Data Protection Act (NDPA), simplifies regulatory conversations, and means zero data-sovereignty risk from foreign government data requests.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What does "OCI-compatible" mean and why does it matter?<span class="ic"><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg></span></button><div class="faq-a"><p>OllaCloud is built on Oracle Cloud Infrastructure (OCI)-compatible rack-scale hardware, the same architecture used by global hyperscalers. This means you get enterprise-grade compute (552–2208 OCPUs, 6–26 TB RAM), S3-compatible object storage, and upstream-compatible Kubernetes, all from a platform that lives in Lagos. Your existing OCI or AWS tooling, SDKs, and Terraform modules work without modification.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How does OllaCloud compare to hosting on AWS or Azure?<span class="ic"><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg></span></button><div class="faq-a"><p>The infrastructure primitives are equivalent: compute, block and object storage, virtual networking, managed Kubernetes  but with three key advantages: single-digit-millisecond latency to Nigerian users (versus 80–150 ms from European regions), billing in Naira with no forex exposure, and full data residency within Nigerian borders. You also get a 3-layer inbuilt firewall and compute enclave isolation that is architecturally on par with the global tier-1 providers.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What uptime guarantee do you offer?<span class="ic"><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg></span></button><div class="faq-a"><p>OllaCloud operates on a 99.99% SLA backed by redundant rack-scale infrastructure, multi-zone replication and automated failover. If we fall short of the committed availability level, service credits apply per the SLA terms. Our in-country engineering and security operations team monitors the platform 24/7.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How secure is OllaCloud?<span class="ic"><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg></span></button><div class="faq-a"><p>OllaCloud enforces a 3-layer inbuilt firewall and compute enclave isolation, meaning each tenant's workload is separated at the hardware level not just by software policy. All data at rest is encrypted with AES-256. OllaCloud administrators have zero access to your data or your virtual infrastructure. Your Virtual Cloud Network (VCN) is fully private by default.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Can you help us migrate from another cloud provider?<span class="ic"><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg></span></button><div class="faq-a"><p>Yes. Our solutions team will assess your current architecture, map your workloads to OllaCloud primitives, and run a seamless migration with minimal downtime. Because OllaCloud is OCI-compatible and supports S3-compatible APIs, most migrations require only an endpoint change rather than a full re-architecture. Enterprise customers receive a dedicated solutions engineer for the entire journey.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How do I get support when something goes wrong?<span class="ic"><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg></span></button><div class="faq-a"><p>Every plan includes in-country support from engineers based in Nigeria not a queue eight time zones away. Enterprise customers have 24/7 access and a named engineer. You can also reach the team directly at <strong>+234 704 921 4944</strong> or <strong>sales@ollasystems.com</strong>.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band"><div class="cta-glow"></div><div class="wrap cta-inner">
+  <span class="eyebrow center">Still have questions?</span>
+  <h2>Talk to a human.</h2>
+  <p>Our team is happy to walk through architecture, pricing or migration whatever you need to move forward.</p>
+  <div class="hero-cta"><a href="company.html#contact" class="btn btn-primary btn-lg">Contact us <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg></a></div>
+</div></section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <!-- LOGO (footer) · sits on a BLACK background. If your logo is dark, -->
+          <!-- use a light/white version here, e.g. images/olla-logo-light.png -->
+          <img src="images/logo-light.png" alt="OllaCloud" class="logo-img-hf">
+          <span class="brand-text" style="color:#fff">OllaCloud<span class="sub">Ollasystems</span></span>
+        </a>
+        <p>Sovereign cloud infrastructure for African business. Built, hosted and supported in Nigeria.</p>
+        <div class="footer-contact"><a href="tel:+2347049214944">+234 704 921 4944</a><a href="mailto:sales@ollasystems.com">sales@ollasystems.com</a></div>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="product.html#compute">Compute</a></li><li><a href="product.html#storage">Storage</a></li><li><a href="product.html#networking">Networking</a></li><li><a href="product.html#kubernetes">Kubernetes</a></li><li><a href="product.html#backup">Backup &amp; DR</a></li><li><a href="product.html#database">Databases</a></li></ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul><li></li><li><a href="resources.html#docs">Documentation</a></li><li><a href="resources.html#status">System status</a></li><li><a href="resources.html#faqs">FAQs</a></li><li><a href="resources.html">Support</a></li></ul></div>
+      <div class="footer-col"><h4>About Us</h4><ul><li><a href="company.html">About us</a></li><li><a href="company.html#values">Our values</a></li><li></li><li><a href="company.html#contact">Contact</a></li><li><a href="company.html#careers">Careers</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ollasystems Ltd. All rights reserved.</span>
+      <div class="legal"><a href="privacy.html">Privacy Policy</a><a href="solutions.html">Terms of Service</a><a href="solutions.html">SLA</a></div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/olla-systems/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 5.9V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2.05 1.4-2.05 2.8V21H9z"/></svg></a>
+        <a href="https://www.instagram.com/ollasystems?igsh=dnlqZjF2dGJrZnRu" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5zm4.8-3.1a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg></a>
+      </div>    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+<div class="chat-widget" id="chatWidget" aria-live="polite">
+  <button class="chat-trigger" id="chatTrigger" aria-label="Open chat" aria-expanded="false">
+    <svg class="chat-icon-open" viewBox="0 0 24 24" width="22" height="22"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+    <svg class="chat-icon-close" viewBox="0 0 24 24" width="20" height="20" style="display:none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+  </button>
+  <div class="chat-panel" id="chatPanel" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-av"><svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="12" fill="#FF2D46"/><ellipse cx="12" cy="12" rx="5" ry="6.5" fill="none" stroke="#fff" stroke-width="2.2"/></svg></div>
+        <div>
+          <div class="chat-hname">OllaCloud</div>
+          <div class="chat-hstatus"><span class="chat-online-dot"></span>Instant response</div>
+        </div>
+      </div>
+      <button class="chat-close-btn" id="chatClose" aria-label="Close chat">
+        <svg viewBox="0 0 16 16" width="14" height="14"><path d="M12 4L4 12M4 4l8 8" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+      </button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot">
+        <div class="chat-bubble">Hi there 👋 I'm the OllaCloud assistant. Ask me anything about our infrastructure, pricing, or getting started.</div>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Type a question…" autocomplete="off" maxlength="300">
+      <button class="chat-send" id="chatSend" aria-label="Send">
+        <svg viewBox="0 0 16 16" width="14" height="14"><path d="M14 8H2M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+<script src="chatbot.js"></script>
+<script src="cookie.js"></script>
+</body>
+</html>

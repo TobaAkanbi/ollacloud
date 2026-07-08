@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NDPA 2023 and Cloud Compliance: What Nigerian Banks Must Know — OllaCloud</title>
+<meta name="description" content="A complete guide to NDPA 2023 cloud compliance for Nigerian banks and fintechs. What the Act requires, how CBN data residency rules apply, and how to achieve compliance without sacrificing cloud performance.">
+<meta name="keywords" content="NDPA cloud compliance, NDPA 2023 Nigeria, cloud compliance Nigeria, NDPA data residency, Nigerian banks cloud compliance, CBN data residency cloud">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .post-wrap { max-width: 740px; margin: 0 auto; padding: 72px 24px 120px; }
+  .post-back { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--muted); text-decoration: none; margin-bottom: 40px; transition: color .15s; font-family: var(--mono-font); }
+  .post-back:hover { color: var(--ink-text); }
+  .post-tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--mint); font-family: var(--mono-font); margin-bottom: 16px; }
+  .post-wrap h1 { font-size: clamp(26px, 4vw, 42px); font-weight: 700; letter-spacing: -.03em; line-height: 1.15; margin: 0 0 20px; color: var(--ink-text); }
+  .post-meta { display: flex; align-items: center; gap: 16px; font-size: 13px; color: var(--muted); font-family: var(--mono-font); margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+  .post-meta .author { display: flex; align-items: center; gap: 8px; }
+  .post-av { width: 28px; height: 28px; border-radius: 50%; background: var(--ink-900); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #fff; flex-shrink: 0; }
+  .post-wrap h2 { font-size: 22px; font-weight: 700; letter-spacing: -.02em; margin: 48px 0 12px; color: var(--ink-text); }
+  .post-wrap h3 { font-size: 18px; font-weight: 700; letter-spacing: -.01em; margin: 32px 0 10px; color: var(--ink-text); }
+  .post-wrap p { font-size: 16px; line-height: 1.8; color: var(--muted); margin-bottom: 20px; }
+  .post-wrap ul { margin: 0 0 20px 20px; padding: 0; }
+  .post-wrap ul li { font-size: 16px; line-height: 1.8; color: var(--muted); margin-bottom: 8px; }
+  .post-wrap ol { margin: 0 0 20px 20px; padding: 0; }
+  .post-wrap ol li { font-size: 16px; line-height: 1.8; color: var(--muted); margin-bottom: 8px; }
+  .post-wrap strong { color: var(--ink-text); font-weight: 600; }
+  .post-divider { border: none; border-top: 1px solid var(--line); margin: 48px 0; }
+  .post-callout { background: var(--paper); border-left: 3px solid var(--mint); border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 32px 0; }
+  .post-callout p { margin: 0; font-size: 15px; }
+  .post-footer { margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+  .post-footer a { font-size: 14px; color: var(--mint); text-decoration: none; font-family: var(--mono-font); }
+  .post-footer a:hover { text-decoration: underline; }
+  .post-cta-block { background: var(--ink-900); border-radius: 12px; padding: 32px; margin: 48px 0; text-align: center; }
+  .post-cta-block h3 { color: #fff; font-size: 20px; margin: 0 0 10px; }
+  .post-cta-block p { color: rgba(255,255,255,.65); font-size: 14px; margin: 0 0 20px; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "NDPA 2023 and Cloud Compliance: What Nigerian Banks Must Know",
+  "description": "A complete guide to NDPA 2023 cloud compliance for Nigerian banks and fintechs — what the Act requires, how CBN rules apply, and how to achieve compliance without sacrificing cloud performance.",
+  "author": { "@type": "Organization", "name": "OllaCloud" },
+  "publisher": { "@type": "Organization", "name": "Ollasystems", "url": "https://ollasystems.com" },
+  "datePublished": "2026-07-01",
+  "keywords": "NDPA cloud compliance, NDPA 2023 Nigeria, Nigerian banks cloud compliance"
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="../index.html" class="brand" aria-label="OllaCloud home">
+      <img src="../images/Logo-main.png" alt="OllaCloud" class="logo-img-hf">
+      <span class="brand-text">OllaCloud<span class="sub">Ollasystems</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <div class="nav-item"><a href="../product.html" class="nav-link">Product <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+        <div class="dropdown">
+          <a href="../product.html#compute" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></span><span class="dd-col"><span class="dd-t">Compute</span><span class="dd-d">Elastic virtual machines &amp; bare metal</span></span></a>
+          <a href="../product.html#storage" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span><span class="dd-col"><span class="dd-t">Storage</span><span class="dd-d">Object &amp; block storage, S3-compatible</span></span></a>
+          <a href="../product.html#networking" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M6.5 6.5l3 3M17.5 6.5l-3 3M6.5 17.5l3-3M17.5 17.5l-3-3"/></svg></span><span class="dd-col"><span class="dd-t">Networking</span><span class="dd-d">VPCs, load balancing, private links</span></span></a>
+          <a href="../product.html#kubernetes" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><circle cx="12" cy="11" r="2.5"/><path d="M12 4v4M19 8l-4 2M5 8l4 2"/></svg></span><span class="dd-col"><span class="dd-t">Managed Kubernetes</span><span class="dd-d">Production-ready container clusters</span></span></a>
+        </div>
+      </div>
+            <div class="nav-item">
+        <a href="#" class="nav-link">Solutions <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+                <div class="dropdown dd-two-col">
+          <a href="../solutions/cloud-solutions.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M18 10h-1.3A6 6 0 1 0 8 15h10a4 4 0 0 0 0-8z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span><span class="dd-col"><span class="dd-t">Cloud Solutions</span><span class="dd-d">IaaS, PaaS &amp; cloud infrastructure</span></span></a>
+          <a href="../solutions/service-implementation.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="11" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span><span class="dd-col"><span class="dd-t">Service Implementation</span><span class="dd-d">Unlock efficiency and innovation</span></span></a>
+          <a href="../solutions/managed-services.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5"/></svg></span><span class="dd-col"><span class="dd-t">Managed Services</span><span class="dd-d">Managing and sustaining IT operations</span></span></a>
+          <a href="../solutions/it-training.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span><span class="dd-col"><span class="dd-t">IT Training</span><span class="dd-d">Expert training for technology solutions</span></span></a>
+          <a href="../solutions/security.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M12 2l7 4v6c0 5-3.5 9-7 10C8.5 21 5 17 5 12V6l7-4z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span><span class="dd-col"><span class="dd-t">Security</span><span class="dd-d">Empower your business with cyber resilience</span></span></a>
+          <a href="../solutions/ollacloud-private-infrastructure.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 9h6v6H9z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span><span class="dd-col"><span class="dd-t">OllaCloud</span><span class="dd-d">Private cloud infrastructure, built in Nigeria</span></span></a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="../resources.html" class="nav-link active">Resources <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+        <div class="dropdown dd-two-col">
+          <a href="../resources/private-cloud-nigeria.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span class="dd-col"><span class="dd-t">Private Cloud Nigeria</span><span class="dd-d">OCI-compatible private cloud appliance</span></span></a>
+          <a href="../resources/hybrid-cloud-nigeria.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M18 10h-1.3A6 6 0 1 0 8 15h10a4 4 0 0 0 0-8z"/></svg></span><span class="dd-col"><span class="dd-t">Hybrid Cloud Nigeria</span><span class="dd-d">Private cloud + OCI public cloud</span></span></a>
+          <a href="../resources/cloud-for-banks-nigeria.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span><span class="dd-col"><span class="dd-t">Cloud for Banks</span><span class="dd-d">CBN-compliant banking infrastructure</span></span></a>
+          <a href="../resources/cloud-for-fintech-nigeria.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg></span><span class="dd-col"><span class="dd-t">Cloud for Fintech</span><span class="dd-d">NDPA + PCI DSS compliant fintech infra</span></span></a>
+          <a href="../resources/cloud-migration-nigeria.html" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><span class="dd-col"><span class="dd-t">Cloud Migration</span><span class="dd-d">4-stage migration methodology</span></span></a>
+          <a href="../resources.html#blog" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span><span class="dd-col"><span class="dd-t">Blog</span><span class="dd-d">Engineering posts &amp; product updates</span></span></a>
+          <a href="../resources.html#faqs" class="dd-link"><span class="dd-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 4 2c0 1.5-2 2-2 3.5"/></svg></span><span class="dd-col"><span class="dd-t">FAQs</span><span class="dd-d">Answers to common questions</span></span></a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="../pricing.html" class="nav-link">Pricing</a></div>
+      <div class="nav-item"><a href="../company.html" class="nav-link">About Us</a></div>
+    </nav>
+    <div class="nav-cta">
+      <a href="../booking.html" class="btn btn-teams">
+        <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0"><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM3 10h18M9 10v10M9 4v6" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg>
+        Schedule a meeting</a>
+      <a href="../company.html#contact" class="btn btn-dark">Talk to sales</a>
+    </div>
+    <button class="burger" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu">
+  <a href="../product.html">Product</a><a href="../resources.html">Resources</a><a href="../company.html">About Us</a>
+  <div class="m-cta"><a href="../company.html#contact" class="btn btn-primary btn-lg">Talk to sales</a></div>
+</div>
+
+<main class="post-wrap">
+  <a href="../resources.html#blog" class="post-back">
+    <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M10 3L5 8l5 5"/></svg>
+    Back to blog
+  </a>
+
+  <span class="post-tag">Compliance</span>
+  <h1>NDPA 2023 and Cloud Compliance: What Nigerian Banks Must Know</h1>
+
+  <div class="post-meta">
+    <div class="author">
+      <div class="post-av">O</div>
+      <span>OllaCloud Team</span>
+    </div>
+    <span>·</span>
+    <span>Jul 2026</span>
+    <span>·</span>
+    <span>8 min read</span>
+  </div>
+
+  <p>The Nigeria Data Protection Act (NDPA) 2023 is the most significant data governance legislation Nigeria has ever enacted. For banks, microfinance institutions, fintechs, and any organisation that processes personal data — which is essentially every business in the financial sector — it changes the ground rules for cloud infrastructure. Not because the cloud is banned, but because the wrong cloud is now a regulatory liability.</p>
+
+  <p>This guide breaks down exactly what the NDPA requires, how it interacts with existing CBN data residency directives, what it means for your cloud strategy, and how to achieve full compliance without sacrificing the performance and agility that cloud infrastructure should deliver.</p>
+
+  <h2>What Is the NDPA 2023?</h2>
+  <p>The Nigeria Data Protection Act 2023 was signed into law in June 2023, replacing the Nigeria Data Protection Regulation (NDPR) of 2019 as Nigeria's primary data protection framework. It establishes a comprehensive set of rights for data subjects — Nigerian citizens and residents whose personal data is collected and processed — and a corresponding set of obligations for data controllers and processors.</p>
+
+  <p>The Act is administered by the Nigeria Data Protection Commission (NDPC), which has the authority to investigate breaches, issue enforcement notices, and impose significant financial penalties for violations.</p>
+
+  <p>For the financial sector specifically, the NDPA operates alongside — not instead of — CBN data governance frameworks. Both apply simultaneously, and compliance with one does not guarantee compliance with the other.</p>
+
+  <h2>The Three NDPA Requirements That Directly Affect Cloud Infrastructure</h2>
+
+  <h3>1. Data Residency and Cross-Border Transfer Restrictions</h3>
+  <p>The NDPA restricts the transfer of personal data outside Nigeria unless specific conditions are met. These conditions include: the destination country has an adequate level of data protection, the data subject has given explicit consent, or standard contractual clauses approved by the NDPC are in place.</p>
+
+  <p>In practice, this means that any cloud provider whose data centres are located outside Nigeria — AWS in Europe, Azure in South Africa, Google Cloud globally — creates an automatic cross-border transfer risk for every piece of personal data you store or process on their platform. Even if a provider has a regional point of presence in Lagos, that is not the same as data residency: data may still be replicated, backed up, or processed in overseas regions.</p>
+
+  <div class="post-callout">
+    <p><strong>Key point:</strong> The NDPA does not prohibit cloud computing. It prohibits the uncontrolled transfer of personal data outside Nigeria without the appropriate legal basis. The simplest way to eliminate this risk entirely is to use cloud infrastructure that physically resides inside Nigeria.</p>
+  </div>
+
+  <h3>2. Data Controller Accountability</h3>
+  <p>Under the NDPA, data controllers — the banks and fintechs that determine why and how personal data is processed — are responsible for ensuring that their data processors (including cloud providers) process data in compliance with the Act. This means your cloud provider's compliance posture becomes your compliance posture.</p>
+
+  <p>If your cloud provider cannot demonstrate where your data is processed, who has access to it, and how it is protected, you are exposed. A Data Processing Agreement (DPA) with a foreign cloud provider does not override the NDPA's residency requirements — it simply documents an arrangement that may still be non-compliant.</p>
+
+  <h3>3. Security and Technical Safeguards</h3>
+  <p>The NDPA requires data controllers and processors to implement appropriate technical and organisational measures to protect personal data against unauthorised access, loss, or destruction. For cloud infrastructure, this translates directly into requirements for encryption at rest and in transit, access controls, audit logging, and the ability to demonstrate these safeguards to the NDPC on request.</p>
+
+  <h2>How CBN Data Residency Rules Layer on Top</h2>
+  <p>The Central Bank of Nigeria's Risk-Based Cybersecurity Framework for Financial Institutions pre-dates the NDPA but reinforces it. The CBN framework requires that financial institutions demonstrate — through documented evidence — where their data resides and how it is protected.</p>
+
+  <p>In June 2026, the CBN went further. Circular PSS/DIR/PUB/CIR/001/004, signed by Rakiya O. Yusuf, Director of the Payments System Supervision Department, directed all deposit money banks, microfinance banks, mobile money operators, switching and processing companies, payment terminal service providers, payment solution service providers, super agents, and other licensed payment operators to store and manage payment transaction data generated within Nigeria on local servers.</p>
+
+  <p>This means Nigerian banks face a dual compliance obligation: NDPA for all personal data, and CBN requirements for payment transaction data specifically. A bank using a cloud provider with no Nigerian data centre cannot satisfy either obligation, regardless of what their contract says.</p>
+
+  <h2>The Cloud Compliance Gap Most Nigerian Banks Are Currently Exposed To</h2>
+  <p>Despite clear regulatory requirements, a significant number of Nigerian financial institutions continue to run workloads on overseas cloud providers. The reasons are understandable: the global hyperscalers offer mature tooling, large ecosystems, and familiar interfaces. The compliance risk has been treated as manageable because enforcement was historically light.</p>
+
+  <p>That is changing. The NDPC has moved from establishing itself to actively enforcing the Act. CBN examinations increasingly include questions about data residency. And reputational risk is growing: enterprise customers, particularly in telecoms, insurance, and government, now require their financial services partners to demonstrate data sovereignty as part of procurement due diligence.</p>
+
+  <div class="post-callout">
+    <p><strong>The practical risk:</strong> A bank that cannot answer "where exactly is your customer data stored?" with a provable, Nigerian-domiciled answer is exposed — to NDPC investigation, CBN examination findings, and the reputational damage of a data residency breach becoming public.</p>
+  </div>
+
+  <h2>What NDPA-Compliant Cloud Infrastructure Looks Like</h2>
+  <p>NDPA compliance for cloud infrastructure requires three things to be true simultaneously:</p>
+  <ul>
+    <li><strong>Data physically resides in Nigeria</strong> — not in a foreign data centre, not replicated to an overseas backup region, not processed by systems outside Nigerian jurisdiction.</li>
+    <li><strong>The cloud provider cannot access your data</strong> — encryption, access controls, and tenant isolation must prevent the provider's administrators from viewing customer data, even in a support context.</li>
+    <li><strong>You can prove it</strong> — audit logs, architecture diagrams, and documented data flows must be available to demonstrate residency and protection to the NDPC or CBN on request.</li>
+  </ul>
+
+  <p>A shared public cloud environment hosted overseas satisfies none of these. A shared public cloud environment hosted in Nigeria satisfies the first but not necessarily the second or third, depending on the provider's architecture. A private cloud appliance — dedicated hardware inside your own facility, running cloud software under your governance — satisfies all three.</p>
+
+  <h2>How OllaCloud Delivers NDPA-Compliant Cloud Infrastructure</h2>
+  <p>OllaCloud is Olla Systems' OCI-compatible private cloud appliance, deployed directly inside your Nigerian data centre or co-location facility. Because the infrastructure is physically located in Nigeria and operates under your governance, it provides the most straightforward path to NDPA and CBN compliance available in the Nigerian market:</p>
+
+  <ul>
+    <li><strong>Data residency by architecture</strong> — your data never leaves your facility. There is no cross-border transfer risk because the infrastructure has no connection to overseas data centres unless you explicitly configure one.</li>
+    <li><strong>Zero provider access to your data</strong> — OllaCloud administrators have no visibility into your virtual infrastructure or data. Encryption, compute enclave isolation, and a 3-layer inbuilt firewall ensure hardware-level separation.</li>
+    <li><strong>Audit-ready documentation</strong> — Olla Systems provides the architecture documentation, access logs, and compliance evidence you need for NDPC and CBN examinations.</li>
+    <li><strong>OCI-compatible APIs</strong> — your engineering team uses the same OCI tools, SDKs, and Terraform scripts they already know. Compliance does not require a technology compromise.</li>
+  </ul>
+
+  <h2>Practical Steps for Nigerian Banks to Achieve Cloud Compliance</h2>
+  <ol>
+    <li><strong>Audit your current cloud footprint</strong> — map every system that processes personal or financial data and identify where that data is physically stored. If you cannot answer this question with confidence, you have a compliance gap.</li>
+    <li><strong>Classify your data</strong> — distinguish between personal data (NDPA applies), financial data (CBN applies), and non-regulated data. This classification determines which workloads must stay in Nigeria and which may extend to other environments.</li>
+    <li><strong>Evaluate your cloud providers</strong> — demand documented proof of data residency from every cloud provider you use. A contract clause is not proof. A data centre address and architecture diagram is.</li>
+    <li><strong>Move regulated workloads to compliant infrastructure</strong> — core banking systems, customer databases, payment processing, and KYC records must run on infrastructure that physically resides in Nigeria under your governance.</li>
+    <li><strong>Establish a Data Processing Agreement with every cloud provider</strong> — the NDPA requires a written DPA with all processors. Ensure it explicitly addresses residency, access controls, and breach notification obligations.</li>
+  </ol>
+
+  <div class="post-cta-block">
+    <h3>Ready to make your cloud infrastructure NDPA-compliant?</h3>
+    <p>OllaCloud gives Nigerian banks and fintechs a clear, provable path to NDPA and CBN compliance — without sacrificing cloud-native performance or paying in foreign currency.</p>
+    <a href="../private-cloud-nigeria.html" class="btn btn-primary btn-lg" style="display:inline-flex;align-items:center;gap:8px">Explore OllaCloud private cloud <svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg></a>
+  </div>
+
+  <h2>The Bottom Line</h2>
+  <p>The NDPA 2023 does not make cloud computing illegal or difficult. It makes the <em>wrong</em> cloud infrastructure a compliance liability. Nigerian banks and fintechs that continue to run personal and financial data on overseas cloud providers are accumulating regulatory risk that is growing, not diminishing, as enforcement matures.</p>
+
+  <p>The answer is not to abandon cloud computing — it is to use cloud infrastructure that was built for the Nigerian regulatory environment. OllaCloud exists precisely for this reason: enterprise-grade cloud performance, inside your facility, under your governance, billed in Naira.</p>
+
+  <hr class="post-divider">
+
+  <div class="post-footer">
+    <a href="../resources.html#blog">← Back to all posts</a>
+    <a href="../company.html#contact">Talk to our team →</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand">
+          <img src="../images/logo-light.png" alt="OllaCloud" class="logo-img-hf">
+          <span class="brand-text" style="color:#fff">OllaCloud<span class="sub">Ollasystems</span></span>
+        </a>
+        <p>Sovereign cloud infrastructure for African business. Built, hosted and supported in Nigeria.</p>
+        <div class="footer-contact"><a href="tel:+2347049214944">+234 704 921 4944</a><a href="mailto:sales@ollasystems.com">sales@ollasystems.com</a></div>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="../product.html#compute">Compute</a></li><li><a href="../product.html#storage">Storage</a></li><li><a href="../product.html#networking">Networking</a></li><li><a href="../product.html#kubernetes">Kubernetes</a></li></ul></div>
+      <div class="footer-col"><h4>Solutions</h4><ul><li><a href="../private-cloud-nigeria.html">Private Cloud</a></li><li><a href="../hybrid-cloud-nigeria.html">Hybrid Cloud</a></li><li><a href="../cloud-for-banks-nigeria.html">Cloud for Banks</a></li><li><a href="../cloud-for-fintech-nigeria.html">Cloud for Fintech</a></li></ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul><li><a href="../resources.html#blog">Blog</a></li><li><a href="../resources.html#faqs">FAQs</a></li><li></li></ul></div>
+      <div class="footer-col"><h4>About Us</h4><ul><li><a href="../company.html">About us</a></li><li><a href="../company.html#contact">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ollasystems Ltd. All rights reserved.</span>
+      <div class="legal"><a href="../privacy.html">Privacy Policy</a></div>
+    </div>
+  </div>
+</footer>
+<script src="../main.js"></script>
+<script src="../cookie.js"></script>
+</body>
+</html>

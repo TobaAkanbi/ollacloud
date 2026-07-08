@@ -1,0 +1,5 @@
+{
+  "buildCommand": "node generate-blog.js",
+  "outputDirectory": ".",
+  "framework": null
+}

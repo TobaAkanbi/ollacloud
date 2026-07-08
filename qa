@@ -1,0 +1,203 @@
+<button class="faq-q">
+        How is OCS different from using major international public clouds (like AWS, Azure, GCP)?
+        <span class="ic">
+            <svg viewBox="0 0 16 16">
+                <path d="M8 3v10M3 8h10"/>
+            </svg>
+        </span>
+    </button>
+
+    <div class="faq-a">
+        <p>
+            <strong>Local Hosting:</strong> Your workloads run on high-performance infrastructure located within Nigeria, helping you meet data residency and regulatory requirements (like NDPR).<br><br>
+
+            <strong>Local Currency Billing:</strong> You pay for your usage in Naira, providing cost predictability and avoiding FX fluctuations for this service.<br><br>
+
+            <strong>Cost-Effective Virtualization:</strong> OCS utilizes KVM virtualization, potentially saving significant costs compared to VMware licensing fees often associated with private clouds.<br><br>
+
+            <strong>Dedicated Local Support:</strong> You receive 24/7 support from OCS's team of highly trained and experienced engineers based locally.
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- FOR CAL.COM      -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schedule a Meeting — OllaCloud</title>
+<meta name="description" content="Book a 30-minute discovery call with the OllaCloud team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { margin: 0; background: var(--paper); }
+
+  .booking-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid var(--line);
+    background: var(--white);
+  }
+
+  .booking-header .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .booking-header .brand-text {
+    font-family: var(--space-font);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink-text);
+    letter-spacing: -.02em;
+    line-height: 1;
+  }
+
+  .booking-header .brand-text .sub {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .booking-intro {
+    text-align: center;
+    padding: 40px 24px 24px;
+  }
+
+  .booking-intro h1 {
+    font-family: var(--space-font);
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 700;
+    letter-spacing: -.03em;
+    color: var(--ink-text);
+    margin: 0 0 8px;
+  }
+
+  .booking-intro p {
+    font-size: 15px;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .booking-cal-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+  }
+
+  #my-cal-inline-30min {
+    width: 100%;
+    height: 700px;
+    overflow: scroll;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: var(--white);
+  }
+
+  .booking-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color .15s;
+  }
+
+  .booking-back:hover { color: var(--ink-text); }
+
+  @media (max-width: 600px) {
+    .booking-header { padding: 14px 20px; }
+    .booking-intro { padding: 28px 20px 16px; }
+    .booking-cal-wrap { padding: 0 16px 40px; }
+    #my-cal-inline-30min { height: 580px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="booking-header">
+  <a href="index.html" class="brand" aria-label="OllaCloud home">
+    <img src="images/Logo-main.png" alt="OllaCloud" class="logo-img-hf">
+    <span class="brand-text">OllaCloud<span class="sub">Ollasystems</span></span>
+  </a>
+  <a href="javascript:history.back()" class="booking-back">
+    <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+      <path d="M10 3L5 8l5 5"/>
+    </svg>
+    Go back
+  </a>
+</header>
+
+<div class="booking-intro">
+  <h1>Schedule a Meeting</h1>
+  <p>Pick a time that works for you. A 30-minute conversation with our team.</p>
+</div>
+
+<div class="booking-cal-wrap">
+  <!-- Cal inline embed code begins -->
+  <div id="my-cal-inline-30min"></div>
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "30min", {origin:"https://app.cal.com"});
+    Cal.config = Cal.config || {};
+    Cal.config.forwardQueryParams = true;
+
+    Cal.ns["30min"]("inline", {
+      elementOrSelector:"#my-cal-inline-30min",
+      config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+      calLink: "atobatele-akanbi-adcjsp/30min",
+    });
+
+    Cal.ns["30min"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#f4e7e7"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+  <!-- Cal inline embed code ends -->
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+ <!-- For Microsoft -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schedule a Meeting — OllaCloud</title>
+<meta http-equiv="refresh" content="0;url=https://outlook.office.com/book/OllaCloud1@ollasystems.com/?ismsaljsauthenabled">
+<script>window.location.replace("https://outlook.office.com/book/OllaCloud1@ollasystems.com/?ismsaljsauthenabled");</script>
+</head>
+<body>
+<p>Redirecting to booking page… <a href="https://outlook.office.com/book/OllaCloud1@ollasystems.com/?ismsaljsauthenabled">Click here if not redirected</a>.</p>
+</body>
+</html>
+
+
+
+
+<div class="team-card reveal d3"><div class="team-av"><img src="images/team-ifeoluwa-oshinowo.jpg" alt="Ifeoluwa Oshinowo"></div><h3>Ifeoluwa Oshinowo</h3><div class="role">Head of Engineering</div></div>

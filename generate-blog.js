@@ -51,8 +51,7 @@ async function fetchPosts() {
     headers: { 'Content-Type': 'application/json' },
     body   : JSON.stringify({ query: `{
       posts(orderBy: postDate_DESC) {
-        title slug excerpt tag readTime postDate
-        metaDescription metaKeywords
+        title slug excerpt tag readTime postDate metaDescription
         content { html }
       }
     }` })

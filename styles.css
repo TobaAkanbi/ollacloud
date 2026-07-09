@@ -994,9 +994,15 @@ section{position:relative}
   .panel-bar .t{font-size:11px}
   .panel-body{padding:16px;font-size:12px}
   .panel-body .ln{white-space:normal;word-break:break-all}
-  .footer{padding:44px 0 24px}
-  .footer-top{padding-bottom:32px}
-  .footer-brand p{font-size:13px}
+  .footer{padding:40px 0 20px}
+  .footer-top{grid-template-columns:1fr 1fr !important;gap:24px 20px;padding-bottom:28px}
+  .footer-brand{grid-column:1 / -1}
+  .footer-brand p{font-size:13px;max-width:100%}
+  .footer-brand .brand{margin-bottom:10px}
+  .footer-contact{margin-top:12px;gap:6px}
+  .footer-col h4{margin-bottom:12px}
+  .footer-col ul{gap:8px}
+  .footer-col a{font-size:13px}
   .cta-inner{padding:52px 0}
   .cta-inner p{font-size:15px}
   .mobile-menu a{font-size:17px;padding:14px 4px}
@@ -1010,14 +1016,41 @@ section{position:relative}
   .cs-stat-row{grid-template-columns:1fr 1fr;gap:8px;padding:12px}
   .cs-stat-card{padding:10px}
   .cs-sc-val{font-size:18px}
-  .chat-panel{width:calc(100vw - 32px);right:16px;bottom:80px}
+  .chat-panel{width:calc(100vw - 32px);right:16px;bottom:80px;max-height:55vh}
+  .chat-messages{max-height:calc(55vh - 130px)}
 }
+
+/* ── Blog & resource cards — horizontal list on mobile ── */
+@media(max-width:560px){
+  .post-grid{grid-template-columns:1fr;gap:12px}
+  .post-card{flex-direction:row;align-items:stretch;min-height:100px}
+  .post-card-thumb,.post-card-thumb-placeholder{width:110px;min-width:110px;aspect-ratio:unset;height:auto;flex:0 0 110px}
+  .post-card-thumb-placeholder svg{width:24px;height:24px}
+  .post-card-body{padding:14px 16px}
+  .post-card-tag{font-size:10px;margin-bottom:6px}
+  .post-card-body h3{font-size:14px;margin-bottom:6px;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+  .post-card-body p{display:none}
+  .post-card-meta{margin-top:8px;font-size:11px}
+
+  .res-grid{grid-template-columns:1fr;gap:12px}
+  .res-card{display:flex;flex-direction:row;align-items:stretch}
+  .res-top{width:90px;min-width:90px;height:auto;flex:0 0 90px;border-radius:0}
+  .res-top svg{width:28px;height:28px}
+  .res-body{padding:14px 16px}
+  .res-body h3{font-size:15px;margin:6px 0 6px}
+  .res-body p{font-size:13px}
+  .res-meta{margin-top:8px;font-size:11px}
+}
+
+/* ── Product page: Resilience section ── */
+.resilience-grid{grid-template-columns:1fr 1fr}
+@media(max-width:980px){.resilience-grid{grid-template-columns:1fr}}
 
 /* ── Button sizes on mobile ── */
 @media(max-width:560px){
-  .btn{padding:11px 18px;font-size:14px}
-  .btn-lg{padding:12px 20px;font-size:14px}
-  .mobile-menu .m-cta .btn,.mobile-menu .m-cta .btn-lg{padding:13px 18px;font-size:14px}
+  .btn{padding:10px 16px;font-size:13.5px}
+  .btn-lg{padding:10px 16px;font-size:13.5px}
+  .mobile-menu .m-cta .btn,.mobile-menu .m-cta .btn-lg{padding:11px 16px;font-size:13.5px}
 }
 
 /* ── Extra small (≤400px) ── */

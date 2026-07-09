@@ -18,14 +18,16 @@
   ];
 
   var KB = [
+    { q: ['about', 'who are you', 'what is ollacloud', 'what is olla cloud', 'tell me about', 'your company', 'this company', 'what do you do'],
+      a: 'OllaCloud is Nigeria\'s leading private cloud infrastructure provider, built and operated by Ollasystems. We run enterprise-grade IaaS, compute, block & object storage, virtual networking, and managed Kubernetes — all hosted in Lagos, Nigeria.' },
     { q: ['pricing', 'cost', 'price', 'how much', 'naira', 'pay'],
       a: 'Our plans start from ₦18,500/month for a 2 vCPU · 4 GB VM. See full details on our <a href="pricing.html">pricing page</a>.' },
     { q: ['office', 'address', 'location', 'where are you', 'find you', 'visit', 'headquarters', 'hq', 'region', 'where', 'data centre', 'datacenter', 'lagos', 'nigeria'],
-      a: 'You can find us at <strong>Plot 1B Block 12C Babafemi Osoba Crescent, Lekki Phase 1, Lagos, Nigeria</strong>. Our data centre operates from Lagos AZ-1, keeping your data fully within Nigerian borders.' },
+      a: 'You can find us at <strong>Plot 1B Block 12C Babafemi Osoba Crescent, Lekki Phase 1, Lagos, Nigeria</strong>. Our data centre operates from Lagos, keeping your data fully within Nigerian borders.' },
     { q: ['ndpa', 'compliance', 'pci', 'iso', 'regulation', 'regulatory', 'audit'],
-      a: 'OllaCloud is aligned with Nigeria\'s NDPA, ISO 27001, ISO 22301, and PCI DSS. All data stays in-country.' },
+      a: 'OllaCloud is aligned with Nigeria\'s NDPA, ISO 27001, ISO 22301, ISO 27017 and PCI DSS. All data stays in-country.' },
     { q: ['latency', 'speed', 'fast', 'millisecond'],
-      a: 'Our Lagos AZ-1 delivers sub-5ms latency for users across Nigeria — significantly lower than overseas providers.' },
+      a: 'Our infrastructure delivers sub-5ms latency for users across Nigeria - significantly lower than overseas providers.' },
     { q: ['support', 'help', 'engineer', 'contact', 'phone'],
       a: 'You\'ll reach a local engineer in Lagos during WAT business hours. We offer 24/7 monitoring with on-call escalation.' },
     { q: ['kubernetes', 'k8s', 'container', 'docker'],
@@ -43,7 +45,7 @@
     { q: ['trial', 'free', 'demo', 'test', 'try'],
       a: 'We offer free demos and a guided trial environment. <a href="company.html#contact">Book a demo</a> with our team.' },
     { q: ['billing', 'invoice', 'currency', 'fx', 'dollar'],
-      a: 'All invoices are in Nigerian Naira (₦). No foreign exchange exposure or surprise dollar charges.' },
+      a: 'All invoices are in local currency. No foreign exchange exposure or surprise dollar charges.' },
     { q: ['backup', 'disaster recovery', 'failover'],
       a: 'Automated backups and cross-zone failover are available, with near-zero recovery time and point objectives.' },
   ];

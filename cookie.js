@@ -2,8 +2,18 @@
 (function () {
   var STORAGE_KEY = 'olla_cookie_consent';
 
+  function setCookie(val) {
+    var expires = new Date(Date.now() + 24 * 60 * 60 * 1000).toUTCString();
+    document.cookie = STORAGE_KEY + '=' + val + '; expires=' + expires + '; path=/; SameSite=Lax';
+  }
+
+  function getCookie() {
+    var match = document.cookie.match('(?:^|; )' + STORAGE_KEY + '=([^;]*)');
+    return match ? match[1] : null;
+  }
+
   // Don't show if already answered
-  if (localStorage.getItem(STORAGE_KEY)) return;
+  if (getCookie()) return;
 
   var css = `
     #olla-cookie-overlay {
@@ -157,7 +167,7 @@
   // ───────────────────────────────────────────────────────────────
 
   function dismiss(choice) {
-    localStorage.setItem(STORAGE_KEY, choice);
+    setCookie(choice);
     if (choice === 'accepted') collectIP();
     var overlay = document.getElementById('olla-cookie-overlay');
     if (overlay) {

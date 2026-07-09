@@ -655,7 +655,7 @@ section{position:relative}
   .wrap{padding:0 32px}
 }
 @media(max-width:980px){
-  .nav-links,.nav-console{display:none}
+  .nav-links,.nav-console,.nav-cta{display:none}
   .burger{display:grid}
   .hero-inner,.split,.overview,.story,.contact-split{grid-template-columns:1fr;gap:40px}
   .hero-float-stage{height:320px}
@@ -907,4 +907,164 @@ section{position:relative}
     color: #16a34a; /* Green */
     font-size: inherit;
     font-weight: 700;
+}
+/* ============================================================
+   MOBILE — comprehensive pass
+   ============================================================ */
+
+/* ── Tablet (≤980px) ── */
+@media(max-width:980px){
+  .sec{padding:72px 0}
+  .page-hero{padding:52px 0 56px}
+  .page-hero h1{font-size:clamp(28px,5.5vw,48px)}
+  .page-hero p{font-size:17px}
+  .logos-row{grid-template-columns:repeat(3,1fr);gap:8px}
+  .logo-img{height:64px;max-width:160px}
+  .logo-img.mtn{height:48px}
+  .console-demo-section{padding:56px 0 64px}
+  .cf-screens,.cf-screen,.cs-login-wrap{min-height:380px}
+  .hero-inner{padding:0 0}
+}
+
+/* ── Large phone (≤640px) ── */
+@media(max-width:640px){
+  .logos-row{grid-template-columns:repeat(3,1fr);gap:6px}
+  .logo-img{height:50px;max-width:120px}
+  .logo-img.mtn{height:38px}
+  .logo-img-hf{height:36px}
+  .hero{min-height:0;padding:48px 0 52px}
+  .hero h1{font-size:clamp(28px,7.5vw,44px)}
+  .hero p.lead{font-size:15px}
+  .page-hero{padding:44px 0 48px}
+  .page-hero h1{font-size:clamp(26px,7vw,40px)}
+  .page-hero p{font-size:16px;margin-top:14px}
+  .sec-head p{font-size:16px}
+  .cta-inner{padding:60px 0}
+  .cta-inner h2{font-size:clamp(26px,6.5vw,40px)}
+  .cta-inner p{font-size:16px}
+  .quote{padding:24px 20px}
+  .quote p{font-size:15px}
+  .contact-form{padding:24px 20px}
+  .panel-body .ln{white-space:normal;word-break:break-all}
+  .panel-body{overflow-x:auto}
+  .spec-table-wrap,.spec-table{overflow-x:auto;display:block;width:100%;-webkit-overflow-scrolling:touch}
+}
+
+/* ── Mobile (≤560px) ── */
+@media(max-width:560px){
+  .logos-row{grid-template-columns:repeat(2,1fr);gap:6px}
+  .logo-img{height:42px;max-width:100px}
+  .logo-img.mtn{height:32px}
+  .logo-img-hf{height:30px}
+  .hero{min-height:0;padding:40px 0 48px}
+  .hero h1{font-size:clamp(26px,8.5vw,38px)}
+  .hero p.lead{font-size:14.5px}
+  .hero-meta .stat .n{font-size:22px}
+  .hero-meta{gap:20px}
+  .hero-float-stage{display:none}
+  .page-hero{padding:36px 0 42px}
+  .page-hero h1{font-size:clamp(24px,8vw,34px)}
+  .page-hero p{font-size:15px;margin-top:12px}
+  .sec{padding:52px 0}
+  .sec-head h2{font-size:clamp(22px,7vw,30px)}
+  .sec-head p{font-size:15px;margin-top:12px}
+  .hss-val{font-size:22px}
+  .hss-l{font-size:10px}
+  .hero-stats-strip{padding:18px 16px}
+  .hss-item{padding:10px 14px}
+  .svc-card{padding:22px 18px}
+  .svc-card h3{font-size:17px}
+  .value-card{padding:22px 18px}
+  .val-c{padding:22px 18px}
+  .tier-card{padding:24px 18px}
+  .ptype{padding:20px 16px;gap:14px}
+  .region-stat{padding:18px}
+  .region-stat .n{font-size:30px}
+  .quote{padding:20px 16px}
+  .quote p{font-size:14px}
+  .quote .qm{font-size:32px}
+  .price-card{padding:24px 18px}
+  .price-amt .val{font-size:36px}
+  .price-amt .cur{font-size:17px}
+  .contact-form{padding:20px 16px}
+  .contact-split{gap:28px}
+  .contact-info .ci{padding:14px 0}
+  .metric-stack .m{padding:18px 16px}
+  .metric-stack .mn{font-size:30px}
+  .panel-bar .t{font-size:11px}
+  .panel-body{padding:16px;font-size:12px}
+  .panel-body .ln{white-space:normal;word-break:break-all}
+  .footer{padding:40px 0 20px}
+  .footer-top{grid-template-columns:1fr 1fr !important;gap:24px 20px;padding-bottom:28px}
+  .footer-brand{grid-column:1 / -1}
+  .footer-brand p{font-size:13px;max-width:100%}
+  .footer-brand .brand{margin-bottom:10px}
+  .footer-contact{margin-top:12px;gap:6px}
+  .footer-col h4{margin-bottom:12px}
+  .footer-col ul{gap:8px}
+  .footer-col a{font-size:13px}
+  .cta-inner{padding:52px 0}
+  .cta-inner p{font-size:15px}
+  .mobile-menu a{font-size:17px;padding:14px 4px}
+  .cs-sidebar{display:none}
+  .faq-q{font-size:15px;padding:18px 0}
+  .res-body h3{font-size:16px}
+  .post-card-body h3{font-size:16px}
+  .spec-table th,.spec-table td{padding:12px 14px;font-size:13px}
+  .console-demo-section{padding:44px 0 52px}
+  .cf-screens,.cf-screen,.cs-login-wrap{min-height:340px}
+  .cs-stat-row{grid-template-columns:1fr 1fr;gap:8px;padding:12px}
+  .cs-stat-card{padding:10px}
+  .cs-sc-val{font-size:18px}
+  .chat-panel{width:calc(100vw - 32px);right:16px;bottom:80px;max-height:55vh}
+  .chat-messages{max-height:calc(55vh - 130px)}
+}
+
+/* ── Blog & resource cards — horizontal list on mobile ── */
+@media(max-width:560px){
+  .post-grid{grid-template-columns:1fr;gap:12px}
+  .post-card{flex-direction:row;align-items:stretch;min-height:100px}
+  .post-card-thumb,.post-card-thumb-placeholder{width:110px;min-width:110px;aspect-ratio:unset;height:auto;flex:0 0 110px}
+  .post-card-thumb-placeholder svg{width:24px;height:24px}
+  .post-card-body{padding:14px 16px}
+  .post-card-tag{font-size:10px;margin-bottom:6px}
+  .post-card-body h3{font-size:14px;margin-bottom:6px;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+  .post-card-body p{display:none}
+  .post-card-meta{margin-top:8px;font-size:11px}
+
+  .res-grid{grid-template-columns:1fr;gap:12px}
+  .res-card{display:flex;flex-direction:row;align-items:stretch}
+  .res-top{width:90px;min-width:90px;height:auto;flex:0 0 90px;border-radius:0}
+  .res-top svg{width:28px;height:28px}
+  .res-body{padding:14px 16px}
+  .res-body h3{font-size:15px;margin:6px 0 6px}
+  .res-body p{font-size:13px}
+  .res-meta{margin-top:8px;font-size:11px}
+}
+
+/* ── Product page: Resilience section ── */
+.resilience-grid{grid-template-columns:1fr 1fr}
+@media(max-width:980px){.resilience-grid{grid-template-columns:1fr}}
+
+/* ── Button sizes on mobile ── */
+@media(max-width:560px){
+  .btn{padding:10px 16px;font-size:13.5px}
+  .btn-lg{padding:10px 16px;font-size:13.5px}
+  .mobile-menu .m-cta .btn,.mobile-menu .m-cta .btn-lg{padding:11px 16px;font-size:13.5px}
+}
+
+/* ── Extra small (≤400px) ── */
+@media(max-width:400px){
+  .wrap{padding:0 14px}
+  .logos-row{grid-template-columns:1fr 1fr}
+  .logo-img{height:36px}
+  .hero h1{font-size:clamp(23px,8vw,30px)}
+  .page-hero h1{font-size:clamp(22px,8vw,28px)}
+  .sec-head h2{font-size:clamp(20px,7.5vw,26px)}
+  .hss-item{padding:8px 10px}
+  .hss-val{font-size:19px}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .footer-bottom .legal{flex-wrap:wrap;gap:10px}
+  .price-amt .val{font-size:32px}
+  .brand-text .sub{display:none}
 }

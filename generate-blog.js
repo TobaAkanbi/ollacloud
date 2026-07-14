@@ -69,7 +69,7 @@ function navHTML() {
   <div class="wrap nav">
     <a href="../index.html" class="brand" aria-label="OllaCloud home">
       <img src="../images/Logo-main.png" alt="OllaCloud" class="logo-img-hf">
-      <span class="brand-text">OllaCloud<span class="sub">Ollasystems</span></span>
+      <span class="brand-text">OllaCloud</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
       <div class="nav-item">
@@ -130,7 +130,7 @@ function footerHTML() {
       <div class="footer-brand">
         <a href="../index.html" class="brand">
           <img src="../images/logo-light.png" alt="OllaCloud" class="logo-img-hf">
-          <span class="brand-text" style="color:#fff">OllaCloud<span class="sub">Ollasystems</span></span>
+          <span class="brand-text" style="color:#fff">OllaCloud</span>
         </a>
         <p>Sovereign cloud infrastructure for African business. Built, hosted and supported in Nigeria.</p>
         <div class="footer-contact"><a href="tel:+2347049214944">+234 704 921 4944</a><a href="mailto:sales@ollasystems.com">sales@ollasystems.com</a></div>

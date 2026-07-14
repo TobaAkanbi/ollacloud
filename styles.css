@@ -97,13 +97,15 @@ section{position:relative}
   border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s;
 }
 .site-header.scrolled{border-color:var(--line);box-shadow:0 1px 0 rgba(0,0,0,.04)}
-.site-header.navy{background:#1e3a5f;border-bottom:1px solid rgba(255,255,255,0.08)}
+.site-header.navy{background:#1a1a1a;border-bottom:1px solid rgba(255,255,255,0.08)}
 .site-header.navy.scrolled{border-color:rgba(255,255,255,0.12);box-shadow:0 1px 0 rgba(0,0,0,.2)}
 .site-header.navy .nav-link{color:rgba(255,255,255,0.85)}
 .site-header.navy .nav-link:hover{background:rgba(255,255,255,0.08);color:#fff}
 .site-header.navy .nav-link.active{color:#fff}
 .site-header.navy .brand .sub{color:rgba(255,255,255,0.45)}
 .site-header.navy .brand-text{color:#fff}
+.site-header.navy .burger{border-color:rgba(255,255,255,0.3)}
+.site-header.navy .burger span,.site-header.navy .burger span::before,.site-header.navy .burger span::after{background:#fff}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .brand{display:flex;align-items:center;gap:11px;font-family:var(--space-font);font-weight:600;font-size:20px;letter-spacing:-.03em}
 .brand .mark{width:34px;height:34px;flex:0 0 auto}

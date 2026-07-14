@@ -97,7 +97,7 @@ section{position:relative}
   border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s;
 }
 .site-header.scrolled{border-color:var(--line);box-shadow:0 1px 0 rgba(0,0,0,.04)}
-.site-header.navy{background:#1e3a5f;border-bottom:1px solid rgba(255,255,255,0.08)}
+.site-header.navy{background:#1a1a1a;border-bottom:1px solid rgba(255,255,255,0.08)}
 .site-header.navy.scrolled{border-color:rgba(255,255,255,0.12);box-shadow:0 1px 0 rgba(0,0,0,.2)}
 .site-header.navy .nav-link{color:rgba(255,255,255,0.85)}
 .site-header.navy .nav-link:hover{background:rgba(255,255,255,0.08);color:#fff}

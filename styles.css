@@ -104,6 +104,8 @@ section{position:relative}
 .site-header.navy .nav-link.active{color:#fff}
 .site-header.navy .brand .sub{color:rgba(255,255,255,0.45)}
 .site-header.navy .brand-text{color:#fff}
+.site-header.navy .burger{border-color:rgba(255,255,255,0.3)}
+.site-header.navy .burger span,.site-header.navy .burger span::before,.site-header.navy .burger span::after{background:#fff}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .brand{display:flex;align-items:center;gap:11px;font-family:var(--space-font);font-weight:600;font-size:20px;letter-spacing:-.03em}
 .brand .mark{width:34px;height:34px;flex:0 0 auto}

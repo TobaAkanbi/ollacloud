@@ -6,3 +6,5 @@ serve.py
 claude
 secret.yaml
 k8s/secret.yaml
+.DS_Store
+DS_Store

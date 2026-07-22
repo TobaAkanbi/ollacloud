@@ -75,105 +75,127 @@
   <a href="product.html">Product</a><a href="resources.html">Resources</a><a href="company.html">About Us</a>
   <div class="m-cta"><a href="booking.html" class="btn btn-lg" style="background:#1a7a3f;color:#fff;border:none">Schedule a meeting</a><a href="company.html#contact" class="btn btn-primary btn-lg">Talk to sales</a></div>
 </div>
-<section class="page-hero">
-  <div class="hero-grid-bg"></div><div class="hero-glow"></div>
-  <div class="wrap">
-    <span class="eyebrow">Pricing</span>
-    <h1>Transparent pricing,<br>billed in naira.</h1>
-    <p>No dollar surprises, no hidden egress traps. Start small, scale when you need to, and only pay for what you run.</p>
-    <div class="bill-toggle" role="tablist">
-      <button class="active" data-bill="monthly">Monthly</button>
-      <button data-bill="annual">Annual <span class="save">−15%</span></button>
+<style>
+.pricing-wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.pricing-tabs-row{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:0}
+.pricing-tabs{display:flex}
+.pricing-tab{font-family:var(--space-font);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:16px 24px;border:none;background:none;cursor:pointer;color:var(--muted-2);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .2s}
+.pricing-tab.active{background:#1a1a1a;color:#fff;border-bottom-color:#1a1a1a}
+.pricing-tab:hover:not(.active){color:var(--ink-text)}
+a.pricing-tab{text-decoration:none;display:flex;align-items:center}
+.bill-tabs{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.bill-tab{font-family:var(--space-font);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:10px 20px;border:none;background:none;cursor:pointer;color:var(--muted-2);transition:background .2s,color .2s}
+.bill-tab.active{background:#1a1a1a;color:#fff}
+.shape-header{display:flex;align-items:baseline;justify-content:space-between;padding:32px 0 20px;border-bottom:1px solid var(--line);margin-bottom:24px}
+.shape-title{font-family:var(--mono-font);font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-text)}
+.shape-hint{font-family:var(--mono-font);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-2)}
+.shape-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.shape-card{border:1px solid var(--line);border-radius:10px;padding:24px 26px;cursor:pointer;transition:border-color .2s,box-shadow .2s;background:#fff;position:relative}
+.shape-card:hover{border-color:#aaa;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.shape-card.selected{border-color:var(--red);box-shadow:none}
+.shape-card.selected::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--red);border-radius:10px 0 0 10px}
+.shape-card-name{font-family:var(--space-font);font-size:15px;font-weight:700;color:var(--ink-text);margin-bottom:4px}
+.shape-card-desc{font-size:13px;color:var(--muted);margin-bottom:6px;line-height:1.5}
+.shape-card-specs{font-family:var(--mono-font);font-size:11.5px;color:var(--muted-2);margin-bottom:18px}
+.shape-card-price{display:flex;align-items:baseline;gap:6px}
+.shape-card-price .amount{font-family:var(--space-font);font-size:26px;font-weight:700;color:var(--ink-text);letter-spacing:-.02em}
+.shape-card-price .vat{font-size:12px;color:var(--muted-2)}
+.pricing-note{text-align:center;font-family:var(--mono-font);font-size:12px;color:var(--muted-2);margin-top:32px;padding-bottom:64px}
+@media(max-width:640px){
+  .shape-grid{grid-template-columns:1fr}
+  .pricing-tabs{overflow-x:auto}
+  .pricing-tab{padding:14px 16px;white-space:nowrap}
+  .bill-tab{padding:10px 14px}
+}
+</style>
+
+<div style="background:#fff;padding:56px 0 40px;border-bottom:1px solid var(--line)">
+  <div class="pricing-wrap">
+    <h1 style="font-family:var(--space-font);font-size:clamp(28px,3.5vw,42px);font-weight:700;letter-spacing:-.03em;color:var(--ink-text);margin:0 0 14px;max-width:680px">Transparent pricing,<br>Billed in Naira.</h1>
+    <p style="font-size:16px;line-height:1.7;color:var(--muted);max-width:600px;margin:0 0 8px">Configure your infrastructure here and get an indicative monthly range. Every estimate is followed by a detailed proposal from our team. No surprises.</p>
+    <p style="font-family:var(--mono-font);font-size:12px;color:var(--muted-2);max-width:600px;margin:0;line-height:1.65">Estimates are indicative and based on standard configurations. Final pricing depends on your specific workloads, existing infrastructure and contract terms. All figures in Naira.</p>
+  </div>
+</div>
+
+<div style="background:#fff;border-bottom:1px solid var(--line)">
+  <div class="pricing-wrap">
+    <div class="pricing-tabs-row">
+      <div class="pricing-tabs">
+        <button class="pricing-tab active" id="tab-shape">By Shape</button>
+        <a href="https://ollasystems.com" target="_blank" rel="noopener" class="pricing-tab">Build Custom</a>
+      </div>
+      <div class="bill-tabs">
+        <button class="bill-tab active" id="bill-monthly">Monthly</button>
+        <button class="bill-tab" id="bill-annual">Annual</button>
+      </div>
     </div>
+  </div>
+</div>
+
+<section class="sec" style="padding-top:0;padding-bottom:0;background:#fff">
+  <div class="pricing-wrap">
+    <div class="shape-header">
+      <span class="shape-title">Choose your shape</span>
+      <span class="shape-hint">Select one</span>
+    </div>
+    <div class="shape-grid">
+      <div class="shape-card selected" onclick="selectShape(this)">
+        <div class="shape-card-name">Starter</div>
+        <div class="shape-card-desc">Startups &amp; SaaS, lean and scalable</div>
+        <div class="shape-card-specs">2 OCPU · 16 GB · monthly</div>
+        <div class="shape-card-price"><span class="amount">₦322,630</span><span class="vat">/mo incl. VAT</span></div>
+      </div>
+      <div class="shape-card" onclick="selectShape(this)">
+        <div class="shape-card-name">Growth</div>
+        <div class="shape-card-desc">Online retail &amp; storefronts</div>
+        <div class="shape-card-specs">4 OCPU · 32 GB · 50 Mbps · annual</div>
+        <div class="shape-card-price"><span class="amount">₦726,797</span><span class="vat">/mo incl. VAT</span></div>
+      </div>
+      <div class="shape-card" onclick="selectShape(this)">
+        <div class="shape-card-name">Business</div>
+        <div class="shape-card-desc">ERP &amp; business-critical operations</div>
+        <div class="shape-card-specs">8 OCPU · 64 GB · ERP workloads · annual</div>
+        <div class="shape-card-price"><span class="amount">₦1,196,066</span><span class="vat">/mo incl. VAT</span></div>
+      </div>
+      <div class="shape-card" onclick="selectShape(this)">
+        <div class="shape-card-name">Pro</div>
+        <div class="shape-card-desc">Banking &amp; fintech, security-first</div>
+        <div class="shape-card-specs">8 OCPU · 64 GB · NGFW · dedicated link · annual</div>
+        <div class="shape-card-price"><span class="amount">₦1,600,745</span><span class="vat">/mo incl. VAT</span></div>
+      </div>
+      <div class="shape-card" onclick="selectShape(this)">
+        <div class="shape-card-name">Enterprise</div>
+        <div class="shape-card-desc">Public sector, large-scale</div>
+        <div class="shape-card-specs">12 OCPU · 96 GB · NGFW · annual</div>
+        <div class="shape-card-price"><span class="amount">₦2,323,106</span><span class="vat">/mo incl. VAT</span></div>
+      </div>
+      <div class="shape-card" onclick="selectShape(this)">
+        <div class="shape-card-name">Carrier</div>
+        <div class="shape-card-desc">Carrier-grade telecom networks</div>
+        <div class="shape-card-specs">16 OCPU · 128 GB · NGFW · heavy networking · annual</div>
+        <div class="shape-card-price"><span class="amount">₦3,228,365</span><span class="vat">/mo incl. VAT</span></div>
+      </div>
+    </div>
+    <p class="pricing-note">Prices shown are indicative. Final quotes are tailored to your workload — <a href="company.html#contact" style="color:var(--red)">talk to us</a> for a precise estimate.</p>
   </div>
 </section>
 
-<section class="sec" style="padding-top:64px">
-  <div class="wrap">
-    <div class="price-grid">
-      <!-- STARTER -->
-      <div class="price-card reveal">
-        <div class="price-name">Starter</div>
-        <p class="price-desc">For side projects, prototypes and small workloads finding their feet.</p>
-        <div class="price-amt"><span class="cur">₦</span><span class="val" data-monthly="18,000" data-annual="15,300">18,000</span><span class="per">/month</span></div>
-        <ul class="price-feats">
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> 2 vCPU · 4 GB RAM compute</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> 80 GB block storage</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> 100 GB object storage</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> 1 TB data transfer</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> Email support · 99.9% SLA</li>
-        </ul>
-        <a href="company.html#contact" class="btn btn-line btn-lg">Start here</a>
-      </div>
-      <!-- GROWTH (featured) -->
-      <div class="price-card featured reveal d1">
-        <div class="price-tag">Most popular</div>
-        <div class="price-name">Growth</div>
-        <p class="price-desc">For production apps that need room to scale and a real SLA.</p>
-        <div class="price-amt"><span class="cur">₦</span><span class="val" data-monthly="74,000" data-annual="62,900">74,000</span><span class="per">/month</span></div>
-        <ul class="price-feats">
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> 8 vCPU · 16 GB RAM compute</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> 500 GB block storage</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> 1 TB object storage</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> 5 TB data transfer</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> Managed Kubernetes included</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> Priority support · 99.95% SLA</li>
-        </ul>
-        <a href="company.html#contact" class="btn btn-primary btn-lg">Choose Growth</a>
-      </div>
-      <!-- ENTERPRISE -->
-      <div class="price-card reveal d2">
-        <div class="price-name">Enterprise</div>
-        <p class="price-desc">For regulated and mission-critical workloads with custom needs.</p>
-        <div class="price-amt"><span class="val" style="font-size:34px">Custom</span></div>
-        <ul class="price-feats">
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> Dedicated &amp; bare-metal capacity</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> Multi-zone DR architecture</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> Private interconnects</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> Dedicated solutions engineer</li>
-          <li><svg viewBox="0 0 16 16"><path d="M3 8l3.5 3.5L13 4"/></svg> 24/7 support · 99.99% SLA</li>
-        </ul>
-        <a href="company.html#contact" class="btn btn-dark btn-lg">Talk to sales</a>
-      </div>
-    </div>
-    <p style="text-align:center;color:var(--muted-2);font-family:var(--mono-font);font-size:12.5px;margin-top:28px">Indicative pricing for illustration. Final quotes are tailored to your workload — talk to us for a precise estimate.</p>
-  </div>
-</section>
-
-<!-- pay as you go table -->
-<section class="sec paper">
-  <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">Pay as you go</span><h2>Resource rates</h2><p>Prefer to pay only for exactly what you consume? These are the per-unit building blocks.</p></div>
-    <div class="reveal" style="overflow-x:auto">
-    <table class="spec-table">
-      <thead><tr><th>Resource</th><th>Unit</th><th>Rate (NGN)</th><th>Notes</th></tr></thead>
-      <tbody>
-        <tr><td>Compute — Standard</td><td>per vCPU-hour</td><td class="mono">₦9.50</td><td>General-purpose instances</td></tr>
-        <tr><td>Compute — Bare metal</td><td>per server-hour</td><td class="mono">₦620</td><td>Single-tenant dedicated</td></tr>
-        <tr><td>Block storage</td><td>per GB-month</td><td class="mono">₦42</td><td>SSD-backed volumes</td></tr>
-        <tr><td>Object storage</td><td>per GB-month</td><td class="mono">₦18</td><td>S3-compatible</td></tr>
-        <tr><td>Data transfer (out)</td><td>per GB</td><td class="mono">₦6.00</td><td>In-country transfer is free</td></tr>
-        <tr><td>Managed database</td><td>per instance-hour</td><td class="mono">₦38</td><td>Includes automated backups</td></tr>
-        <tr><td>Load balancer</td><td>per LB-hour</td><td class="mono">₦14</td><td>TLS termination included</td></tr>
-      </tbody>
-    </table>
-    </div>
-  </div>
-</section>
-
-<section class="sec paper">
-  <div class="wrap">
-    <div class="sec-head center reveal"><span class="eyebrow center">Every plan includes</span><h2>The essentials, never an upsell.</h2></div>
-    <div class="value-grid" style="margin-top:48px">
-      <div class="val-c reveal"><div class="vi"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg></div><h3>Encryption everywhere</h3><p>AES-256 at rest and TLS in transit on every resource, at no extra cost.</p></div>
-      <div class="val-c reveal d1"><div class="vi"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></div><h3>Usage dashboards</h3><p>Real-time visibility into spend and consumption, with budget alerts.</p></div>
-      <div class="val-c reveal d2"><div class="vi"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg></div><h3>In-country support</h3><p>Help from engineers in your timezone included on every plan.</p></div>
-    </div>
-  </div>
-</section>
+<script>
+function selectShape(el) {
+  document.querySelectorAll('.shape-card').forEach(function(c){ c.classList.remove('selected'); });
+  el.classList.add('selected');
+}
+document.getElementById('bill-monthly').addEventListener('click', function(){
+  this.classList.add('active');
+  document.getElementById('bill-annual').classList.remove('active');
+});
+document.getElementById('bill-annual').addEventListener('click', function(){
+  // Annual quotes coming soon — no action
+});
+</script>
 
 <section class="cta-band"><div class="cta-glow"></div><div class="wrap cta-inner">
-  <span class="eyebrow center">Not sure which plan?</span>
+  <span class="eyebrow center">Not sure which shape?</span>
   <h2>We'll size it with you.</h2>
   <p>Share your current setup and we'll recommend the most cost-effective fit and map the savings versus your overseas provider.</p>
   <div class="hero-cta"><a href="company.html#contact" class="btn btn-primary btn-lg">Get a tailored quote <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg></a></div>
